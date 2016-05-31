@@ -16,6 +16,5 @@ class Visitor(models.Model):
     employee_to_visit = models.CharField(max_length=60, blank=True, default='')
     subscribe_to_mailing_list = models.BooleanField(default=False)
 
-
     def __str__(self):
         return self.name

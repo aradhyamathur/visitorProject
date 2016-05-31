@@ -1,5 +1,12 @@
+# Other Temp Files 
+*.*~
+
 ### Python ###
+
+
+
 # Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 # C extensions
