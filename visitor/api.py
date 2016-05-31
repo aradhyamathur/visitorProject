@@ -9,6 +9,8 @@ class VisitorList(ListCreateAPIView):
 
     queryset = Visitor.objects.all()
     serializer_class = VisitorSerializer
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAuthenticated, )
 
 
 class VisitorDetail(RetrieveUpdateDestroyAPIView):
