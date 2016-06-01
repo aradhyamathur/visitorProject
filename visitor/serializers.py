@@ -7,6 +7,3 @@ class VisitorSerializer(serializers.ModelSerializer):
         model = Visitor
         fields = ('id', 'name', 'email', 'phone_number')
 
-
-
-
