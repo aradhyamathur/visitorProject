@@ -9,15 +9,15 @@ class VisitorList(ListCreateAPIView):
 
     queryset = Visitor.objects.all()
     serializer_class = VisitorSerializer
-    authentication_classes = (BasicAuthentication, )
-    permission_classes = (IsAuthenticated, )
+    authentication_classes = (BasicAuthentication,)
+    permission_classes = (IsAuthenticated,)
 
 
 class VisitorDetail(RetrieveUpdateDestroyAPIView):
 
     serializer_class = VisitorSerializer
-    authentication_classes = (BasicAuthentication, )
-    permission_classes = (IsAuthenticated, )
+    authentication_classes = (BasicAuthentication,)
+    permission_classes = (IsAuthenticated,)
 
     def get_queryset(self):
         qs = Visitor.objects.filter(id=self.kwargs['pk'])
